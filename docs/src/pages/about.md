@@ -23,9 +23,11 @@ The goal is simple: hunt for hidden flags, exploit vulnerabilities, and level up
 ## Quick Start
 
 ```bash
-npx create-oss-store my-ctf-lab
-cd my-ctf-lab
-npm start
+# With Node.js
+npx create-oss-store && cd oss-oopssec-store && npm start
+
+# With Docker
+docker run -p 3000:3000 leogra/oss-oopssec-store
 ```
 
 Then open [http://localhost:3000](http://localhost:3000) and start hunting flags.
