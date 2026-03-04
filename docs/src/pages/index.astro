@@ -52,10 +52,12 @@ const sortedPosts = getSortedPosts(posts);
         class="app-prose mt-4 prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"
       >
         <Code
-          code={`$ npx create-oss-store
-$ cd oss-oopssec-store && npm start
+          code={`# With Node.js
+$ npx create-oss-store && cd oss-oopssec-store && npm start
+# With Docker
+$ docker run -p 3000:3000 leogra/oss-oopssec-store
 
-# → Open http://localhost:3000 and start hunting flags`}
+# → Open http://localhost:3000 and start hacking`}
           lang="bash"
         />
       </div>
