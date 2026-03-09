@@ -1,8 +1,8 @@
 <div align="center">
-<h1>OSS - OopsSec Store</h1>
-</div>
 
-<div>
+<h1>OSS - OopsSec Store</h1>
+
+</div>
 
 ```
    ____  ____ ____     ____                  ____            ____  _
@@ -10,47 +10,43 @@
  / /_/ /\ \ _\ \     / /_/ // _ \ / _ \(_-<_\ \  / -_)/ __/_\ \  / __// _ \ / __// -_)
  \____/___//___/     \____/ \___// .__/___/___/  \__/ \__//___/  \__/ \___//_/   \__/
                                 /_/
-  # With Node.js
-  $ npx create-oss-store && cd oss-oopssec-store && npm start
-
-  # With Docker
-  $ docker run -p 3000:3000 leogra/oss-oopssec-store
-
-  → Open http://localhost:3000 and start hacking
 ```
-
-</div>
-
-<p align="center">
-  <b>An intentionally vulnerable e-commerce app for learning web security.</b>
-</p>
-
-<p align="center">
-  <b>Master real-world attack vectors through a realistic Capture The Flag platform. Hunt for flags, exploit vulnerabilities, and level up your security skills.</b>
-</p>
-
-<p align="center">
-  <a href="https://github.com/kOaDT/oss-oopssec-store/blob/main/CONTRIBUTING.md">Contributing</a> |
-  <a href="https://github.com/users/kOaDT/projects/3">Roadmap</a> |
-  <a href="https://github.com/users/kOaDT/projects/3/views/6">Good first issues</a> |
-  <a href="https://kOaDT.github.io/oss-oopssec-store">Walkthroughs</a> |
-  <a href="https://hub.docker.com/r/leogra/oss-oopssec-store">Docker Hub</a>
-</p>
 
 <div align="center">
 
+<p>
+<b>An intentionally vulnerable e-commerce app for learning web security.</b><br>
+Master real-world attack vectors through a realistic CTF platform.<br>
+Hunt for flags, exploit vulnerabilities, and level up your security skills.
+</p>
+
+<p>
+<a href="https://hub.docker.com/r/leogra/oss-oopssec-store">Docker Hub</a> ·
+<a href="https://www.npmjs.com/package/create-oss-store">npm</a> ·
+<a href="https://kOaDT.github.io/oss-oopssec-store">Walkthroughs</a> ·
+<a href="https://github.com/kOaDT/oss-oopssec-store/blob/main/CONTRIBUTING.md">Contributing</a> ·
+<a href="https://github.com/users/kOaDT/projects/3/views/6">Good first issues</a>
+</p>
+
 [![GitHub license](https://img.shields.io/github/license/kOaDT/oss-oopssec-store?style=flat-square)](https://github.com/kOaDT/oss-oopssec-store/blob/main/LICENSE)
-[![npm version](https://img.shields.io/npm/v/create-oss-store?style=flat-square)](https://www.npmjs.com/package/create-oss-store)
-[![npm downloads](https://img.shields.io/npm/dm/create-oss-store?style=flat-square)](https://www.npmjs.com/package/create-oss-store)
-<br>
-[![GitHub issues](https://img.shields.io/github/issues/kOaDT/oss-oopssec-store?style=flat-square)](https://github.com/kOaDT/oss-oopssec-store/issues)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/kOaDT/oss-oopssec-store/pulls)
 [![Good first issues](https://img.shields.io/badge/Good_first-issues-7057ff?style=flat-square)](https://github.com/users/kOaDT/projects/3/views/6)
 ![Intentionally Vulnerable](https://img.shields.io/badge/⚠️_Intentionally-Vulnerable-red?style=flat-square)
 <br>
-[![GitHub stars](https://img.shields.io/github/stars/kOaDT/oss-oopssec-store?style=social)](https://github.com/kOaDT/oss-oopssec-store/stargazers) [![GitHub forks](https://img.shields.io/github/forks/kOaDT/oss-oopssec-store?style=social)](https://github.com/kOaDT/oss-oopssec-store/network)
+[![GitHub stars](https://img.shields.io/github/stars/kOaDT/oss-oopssec-store?style=social)](https://github.com/kOaDT/oss-oopssec-store/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/kOaDT/oss-oopssec-store?style=social)](https://github.com/kOaDT/oss-oopssec-store/network)
 
 </div>
+
+```bash
+# Node.js
+npx create-oss-store my-ctf-lab && cd my-ctf-lab && npm start
+
+# Docker
+docker run -p 3000:3000 leogra/oss-oopssec-store
+
+# Then open http://localhost:3000 and start hacking
+```
 
 ---
 
@@ -69,10 +65,6 @@
 - [Top contributors](#top-contributors)
 
 ---
-
-OSS – OopsSec Store is a fake online store full of security vulnerabilities, on purpose. It's built with Next.js, React, and Prisma, and it covers the usual suspects: OWASP Top 10, API flaws, frontend attack vectors.
-
-Each vulnerability hides a flag. Find the bug, exploit it, grab the flag. Walkthroughs are included if you get stuck.
 
 > [!WARNING]
 > This application contains intentional security flaws and must never be deployed in a production environment.
@@ -145,7 +137,7 @@ npm run docker:reset    # Wipe data and restart fresh
 
 The database initializes on first start. Data persists across restarts via Docker named volumes. To reset everything (flag progress, users, uploads), run `npm run docker:reset`.
 
-### Hall of fame
+## Hall of fame
 
 Found all the flags? Open a pull request to join the [Hall of Fame](hall-of-fame/data.json). Add your entry to `hall-of-fame/data.json` and your profile will show up on the `/hall-of-fame` page in the app.
 
@@ -153,7 +145,9 @@ Found all the flags? Open a pull request to join the [Hall of Fame](hall-of-fame
 
 <div align="center">
 
-[![Structure](https://images.repography.com/103508692/kOaDT/oss-oopssec-store/structure/Q7MububoYUVlm99MQWYW12szb_gGlehkuutaTn9WlA4/xqocpGlYz1v1FH126K5mqp7WjOcy1VH9pbA-EuINusA_table.svg)](https://github.com/kOaDT/oss-oopssec-store)
+<a href="https://github.com/kOaDT/oss-oopssec-store">
+  <img src="https://images.repography.com/103508692/kOaDT/oss-oopssec-store/structure/Q7MububoYUVlm99MQWYW12szb_gGlehkuutaTn9WlA4/xqocpGlYz1v1FH126K5mqp7WjOcy1VH9pbA-EuINusA_table.svg" alt="Structure">
+</a>
 
 </div>
 

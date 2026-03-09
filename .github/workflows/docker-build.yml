@@ -1,0 +1,34 @@
+name: Docker Build
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "Dockerfile"
+      - "docker-compose.yml"
+      - "docker-entrypoint.sh"
+      - "package*.json"
+      - "prisma/**"
+      - "app/**"
+      - "lib/**"
+      - "public/**"
+      - "hooks/**"
+      - "scripts/**"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docker-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Docker Build Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Build Docker image
+        run: docker build -t oss-oopssec-store:test .
